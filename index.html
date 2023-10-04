@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="Index.js"></script>
+    <meta charset="UTF-8">
+    <title>Portfolio Calculator</title>
+</head>
+<body>
+<div class="insertOptions" style="float: left; width: 20%;">
+    <h3>Value of Portfolio Calculator</h3>
+    <strong>Use at Your Own Risk</strong>
+    <div>
+        <p>Menu</p>
+        <button type="button" id="clearPortfolio">Clear</button>
+        <button type="button" id="showDemo">Demo</button>
+    </div>
+    <div>
+        <p>Change Chart Range</p>
+        <input name="priceFrom" id="priceFrom" placeholder="Price From (Default: 100)"/>
+        <input name="priceTo" id="priceTo" placeholder="Price To (Default: 500)"/>
+        <input name="priceInterval" id="priceInterval" placeholder="Price Interval (Default: 1)"/>
+        <input name="priceInterval" id="showChartTime" placeholder="Time (only for options, Default: 0)"/>
+        <br/>
+        <button type="button" id="changeChartRange">Change</button>
+    </div>
+    <div>
+        <p>Insert Stock</p>
+        <input name="amount" id="stockAmount" placeholder="Amount (Negative if Short)"/>
+        <input name="price" id="stockPrice" placeholder="Price"/>
+        <br>
+        <button type="button" id="insertStock">Insert</button>
+    </div>
+    <div>
+        <p>Insert Option</p>
+        <input name="OptionType(put or call)" id="OptionType" placeholder="OptionType (call or put)"/>
+        <input name="StrikePrice" id="StrikePrice" placeholder="StrikePrice"/>
+        <input name="expireTime" id="expireTime" placeholder="ExpireTime (days after today)"/>
+        <input name="iv" id="iv" placeholder="IV (if 55% input 0.55)"/>
+        <input name="rate" id="rate" placeholder="Rate (APY, input 0.05 if 5%)"/>
+        <input name="amount" id="amount" placeholder="Amount (Negative if Short)"/>
+        <input name="price" id="price" placeholder="Price"/>
+        <br>
+        <button type="button" id="insertOptions">Insert</button>
+    </div>
+    <div>
+        <p>Insert Bond</p>
+        <input name="amount" id="bondAmount" placeholder="Amount"/>
+        <input name="apy" id="bondAPY" placeholder="APY(input 0.05 if 5%)"/>
+        <input name="expireTime" id="bondMaturityDate" placeholder="Maturity Date (days after today)"/>
+        <br>
+        <button type="button" id="insertBond">Insert</button>
+    </div>
+</div>
+<div style="float: left; width: 80%;">
+    <canvas id="dimensions"></canvas>
+    <p id="currentPortfolio"></p>
+</div>
+<br/>
+</body>
+</html>

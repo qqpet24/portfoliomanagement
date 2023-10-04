@@ -1,0 +1,15 @@
+{
+  "name": "pricesimulator",
+  "version": "1.0.0",
+  "source": "./index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build --no-cache"
+  },
+  "dependencies": {
+    "gaussian": "^1.3.0",
+    "black-scholes": "^1.1.0",
+    "chart.js": "^4.4.0",
+    "parcel": "2.8.3"
+  }
+}
